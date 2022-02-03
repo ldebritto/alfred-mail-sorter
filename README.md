@@ -4,10 +4,9 @@
 ## Usage
 With a selected message in Mail:
 
-1. Press `⌃M` (default shortcut)
-2. Typing `sort`command into Alfred
-3. Type the name of the folder (or part of it) until you see the desired folder selected
-4. Hit return/enter
+1. Press `⌃M` (default shortcut) or type `sort`
+2. Type the name of the folder (or part of it) until you see the desired folder selected
+3. Hit return/enter and message will be moved
 
 ## How does it work
 1. Uses AppleScript to enumerate folder names for the selected account and feed a *Script Filter* on the Alfred Workflow;
