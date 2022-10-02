@@ -1,6 +1,9 @@
 # alfred-mail-sorter
  Moves currently selected message in Mail.app to a folder selected via Alfred interface.
 
+## Pre-requisites
+Requires "JSON Helper", from [Mousedown software](https://www.mousedown.net/software/JSONHelper.html), [available on Mac App Store](https://apps.apple.com/br/app/json-helper-for-applescript/id453114608?mt=12) for free.
+
 ## Usage
 With a selected message in Mail:
 
