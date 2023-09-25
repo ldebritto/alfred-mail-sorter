@@ -21,7 +21,7 @@ With a selected message in Mail:
 ## Does not work with Gmail accounts
 For some reason I suspect is related do the way Mail handles Gmail's proprietary protocol, I guess the move command is not properly held.
 
-Previously, I used a move commant based on a System Events requisition to click on the corresponding "Move to…" command. Gmail worked fine this way. That, however, needed folders to have different names on each account and, also, will require retooling yearly (every time macOS updates), since the position of the menus could change. Different languages were also a con…
+Previously, I used a move commant based on a System Events requisition to click on the corresponding "Move to…" command. Gmail worked fine this way. That, however, needed folders to have different names on each account and, also, will require retooling yearly (every time macOS updates), since the position of the menus could change. Different languages were also a con… (see [Issue #1](https://github.com/ldebritto/alfred-mail-sorter/issues/1))
 
 Current approach does work properly with Exchange and iCloud accounts. Others may work as well.
 
