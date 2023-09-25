@@ -13,20 +13,17 @@ With a selected message in Mail:
 
 ## How does it work
 1. Uses AppleScript to enumerate folder names for the selected account and feed a *Script Filter* on the Alfred Workflow;
-2. Selecting the desired folder will feed the next action with the name of such folder;
-3. A seccond AppleScript will use the name of the folder to select the corresponding "Move to…" item in menubar.
+2. Selecting the desired folder will feed the next action with the name of such folder and the name of its account;
+3. A seccond AppleScript will use this info to issue a move command to each of the selected messages.
 
 # Known Issues
 
-## Doesn't work with folders named the same accross different accounts
+## Does not work with Gmail accounts
+For some reason I suspect is related do the way Mail handles Gmail's proprietary protocol, I guess the move command is not properly held.
 
-Will not work for folders in different accounts that share the same name (there's an AppleScript workaround for that move command, but it does not work fine with Gmail accounts, this is why I've preffered this method).
+Previously, I used a move commant based on a System Events requisition to click on the corresponding "Move to…" command. Gmail worked fine this way. That, however, needed folders to have different names on each account and, also, will require retooling yearly (every time macOS updates), since the position of the menus could change. Different languages were also a con…
 
-To work around this limitation, I suggest adding a capital letter to the end of the name of the chosen folder, identifying the account. As in:
-- Gmail "Later" will be renamed to "Later G"
-- Work "Later" will be renamed to "Later W"
-
-This way one can easily surface the correct folder for each account by typing "Later".
+Current approach does work properly with Exchange and iCloud accounts. Others may work as well.
 
 # Credits
 - Icon from the Noun Project, under the Creative Commons license.
